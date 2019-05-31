@@ -7,44 +7,30 @@
 <body>
   <div class="container">
     <h1>GALACTIC AGE CALCULATOR</h1>
-    <div class="row">
+
+    <form id="age">
+      <div class="form-group">
+        <label for="date">Enter your birthday to find out your age on Mercury, Venus, Mars, and Jupiter (and more!):</label>
+        <input type="date" id="dob">
+      </div>
+
+      <button type="submit" class="btn btn-info">Find out!</button>
+    </form>
+
+    <div class="row" id="ageresult">
       <div class="col-md-6">
-
-        <form id="age">
-          <div class="form-group">
-            <label for="date">Enter your birthday to find out your age on Mercury, Venus, Mars, and Jupiter:</label>
-            <input type="date" id="dob">
-          </div>
-
-          <button type="submit" class="btn btn-info">Find out!</button>
-        </form>
-
-        <div id="ageresult">
-          <p>Your age on Mercury is: <span class="merc"></span></p>
-          <p>Your age on Venus is: <span class="venus"></span></p>
-          <p>Your age on Mars is: <span class="mars"></span></p>
-          <p>Your age on Jupiter is: <span class="jupiter"></span></p>
-        </div>
+        <p>Your age on Mercury is: <span class="merc"></span></p>
+        <p>Your age on Venus is: <span class="venus"></span></p>
+        <p>Your age on Mars is: <span class="mars"></span></p>
+        <p>Your age on Jupiter is: <span class="jupiter"></span></p>
       </div>
 
       <div class="col-md-6">
-        <form id="lifeleft">
-          <div class="form-group">
-            <label for="date">Enter your birthday to find out your remaining life expectancy on Mercury, Venus, Mars, and Jupiter:</label>
-            <input type="date" id="lifedob">
-          </div>
-
-          <button type="submit" class="btn btn-info">Find out!</button>
-        </form>
-
-        <div id="leftresult">
-          <p><span class="mercleft"></span></p>
-          <p><span class="venusleft"></span></p>
-          <p><span class="marsleft"></span></p>
-          <p><span class="jupiterleft"></span></p>
-        </div>
+        <p><span class="mercleft"></span></p>
+        <p><span class="venusleft"></span></p>
+        <p><span class="marsleft"></span></p>
+        <p><span class="jupiterleft"></span></p>
       </div>
-
     </div>
 
   </div>

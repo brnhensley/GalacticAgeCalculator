@@ -13,27 +13,18 @@ $(document).ready(function() {
     let venus = converter.getVenusYears();
     let mars = converter.getMarsYears();
     let jupiter = converter.getJupiterYears();
+    let mercLeft = converter.getMercuryYearsLeft();
+    let venusLeft = converter.getVenusYearsLeft();
+    let marsLeft = converter.getMarsYearsLeft();
+    let jupiterLeft = converter.getJupiterYearsLeft();
     $(".merc").text(merc);
     $(".venus").text(venus);
     $(".mars").text(mars);
     $(".jupiter").text(jupiter);
+    $(".mercleft").text(mercLeft);
+    $(".venusleft").text(venusLeft);
+    $(".marsleft").text(marsLeft);
+    $(".jupiterleft").text(jupiterLeft);
     $("#ageresult").show();
-  });
-});
-
-$(document).ready(function() {
-  $("form#lifeleft").submit(function(event) {
-    event.preventDefault();
-    let dob = $("input#lifedob").val().toString();
-    let converter = new Galc(new Date(dob));
-    let merc = converter.getMercuryYearsLeft();
-    let venus = converter.getVenusYearsLeft();
-    let mars = converter.getMarsYearsLeft();
-    let jupiter = converter.getJupiterYearsLeft();
-    $(".mercleft").text(merc);
-    $(".venusleft").text(venus);
-    $(".marsleft").text(mars);
-    $(".jupiterleft").text(jupiter);
-    $("#leftresult").show();
   });
 });
