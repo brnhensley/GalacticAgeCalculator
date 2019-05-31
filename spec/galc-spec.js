@@ -77,4 +77,11 @@ describe('Galc', function() {
     expect(jupYearsLeft).toEqual(3.08)
   });
 
+  it('should convert the number of earth years over life expectancy to Mercury years', function ()
+  {
+    let dob = new Galc(new Date(1947, 1, 1));
+    let mercYearsLeft = dob.getMercuryYearsLeft();
+    expect(mercYearsLeft).toEqual("You are 2.1 Mercurial years over expected!")
+  });
+
 });

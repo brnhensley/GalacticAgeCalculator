@@ -21,6 +21,15 @@ export class Galc
     return lifeLeft;
   }
 
+  overTime(over)
+  {
+    let positive = Math.abs(over);
+    console.log("overTime" + positive);
+    return positive;
+  }
+
+  // Mercury
+
   getMercuryYears()
   {
     let years = this.getYears();
@@ -31,9 +40,19 @@ export class Galc
   getMercuryYearsLeft()
   {
     let yearsLeft = this.lifeLeft();
+    console.log("yearsLeft" + yearsLeft);
     let mercYearsLeft = parseFloat((yearsLeft / .24).toFixed(1));
+    console.log("mercYearsLeft" + mercYearsLeft);
+    if (mercYearsLeft < 0)
+    {
+      let overTime = "You are " + this.overTime(mercYearsLeft) + " Mercurial years over expected!";
+      console.log("final" + overTime);
+      return overTime;
+    }
     return mercYearsLeft;
   }
+
+  // Venus
 
   getVenusYears()
   {
@@ -49,6 +68,8 @@ export class Galc
     return venYearsLeft;
   }
 
+  // Mars
+
   getMarsYears()
   {
     let years = this.getYears();
@@ -62,6 +83,8 @@ export class Galc
     let marsYearsLeft = parseFloat((yearsLeft / 1.88).toFixed(1));
     return marsYearsLeft;
   }
+
+  // Jupiter
 
   getJupiterYears()
   {
