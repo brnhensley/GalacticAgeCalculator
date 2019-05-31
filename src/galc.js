@@ -32,7 +32,14 @@ export class Galc
   {
     let years = this.getYears();
     let marsYears = (years / 1.88).toFixed(1);
-    console.log(marsYears);
     return marsYears;
+  }
+
+  getJupiterYears()
+  {
+    let years = this.getYears();
+    let jupiterYears = (years / 11.86).toFixed(2);
+    console.log(jupiterYears);
+    return jupiterYears;
   }
 }

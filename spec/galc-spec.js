@@ -40,4 +40,12 @@ describe('Galc', function() {
     expect(marsAge).toEqual('18.6')
   });
 
+  it('should convert earth years to Jupiter years', function ()
+  {
+    // TEST
+    let dob = new Galc(new Date(1984, 3, 13));
+    let jupiterAge = dob.getJupiterYears();
+    expect(jupiterAge).toEqual('2.95')
+  });
+
 });
