@@ -32,4 +32,12 @@ describe('Galc', function() {
     expect(venusAge).toEqual('56.5')
   });
 
+  it('should convert earth years to Mars years', function ()
+  {
+    // TEST
+    let dob = new Galc(new Date(1984, 3, 13));
+    let marsAge = dob.getMarsYears();
+    expect(marsAge).toEqual('18.6')
+  });
+
 });
