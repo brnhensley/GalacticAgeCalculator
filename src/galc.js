@@ -45,7 +45,8 @@ export class Galc
       let overTime = "You are " + this.overTime(mercYearsLeft) + " Mercurial years over expected!";
       return overTime;
     }
-    return mercYearsLeft;
+    let outputYears = "Your remaining life expectancy in Mercurial years is " + mercYearsLeft + "!";
+    return outputYears;
   }
 
   // Venus
@@ -66,7 +67,8 @@ export class Galc
       let overTime = "You are " + this.overTime(venYearsLeft) + " Venusian years over expected!";
       return overTime;
     }
-    return venYearsLeft;
+    let outputYears = "Your remaining life expectancy in Venusian years is " + venYearsLeft + "!";
+    return outputYears;
   }
 
   // Mars
@@ -87,7 +89,8 @@ export class Galc
       let overTime = "You are " + this.overTime(marsYearsLeft) + " Martian years over expected!";
       return overTime;
     }
-    return marsYearsLeft;
+    let outputYears = "Your remaining life expectancy in Martian years is " + marsYearsLeft + "!";
+    return outputYears;
   }
 
   // Jupiter
@@ -108,6 +111,7 @@ export class Galc
       let overTime = "You are " + this.overTime(jupYearsLeft) + " Jovian years over expected!";
       return overTime;
     }
-    return jupYearsLeft;
+    let outputYears = "Your remaining life expectancy in Jovian years is " + jupYearsLeft + "!";
+    return outputYears;
   }
 }
