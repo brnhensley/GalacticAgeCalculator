@@ -17,36 +17,36 @@ describe('Galc', function() {
   it('should subtract an age from average life expectancy', function ()
   {
     let dob = new Galc(new Date(1984, 3, 13));
-    let mercAge = dob.getMercuryYears();
-    expect(mercAge).toEqual('145.8')
+    let lifeLeft = dob.lifeLeft();
+    expect(lifeLeft).toEqual(36.5)
   });
 
   it('should convert earth years to Mercury years', function ()
   {
     let dob = new Galc(new Date(1984, 3, 13));
     let mercAge = dob.getMercuryYears();
-    expect(mercAge).toEqual('145.8')
+    expect(mercAge).toEqual(145.8)
   });
 
   it('should convert earth years to Venus years', function ()
   {
     let dob = new Galc(new Date(1984, 3, 13));
     let venusAge = dob.getVenusYears();
-    expect(venusAge).toEqual('56.5')
+    expect(venusAge).toEqual(56.5)
   });
 
   it('should convert earth years to Mars years', function ()
   {
     let dob = new Galc(new Date(1984, 3, 13));
     let marsAge = dob.getMarsYears();
-    expect(marsAge).toEqual('18.6')
+    expect(marsAge).toEqual(18.6)
   });
 
   it('should convert earth years to Jupiter years', function ()
   {
     let dob = new Galc(new Date(1984, 3, 13));
     let jupiterAge = dob.getJupiterYears();
-    expect(jupiterAge).toEqual('2.95')
+    expect(jupiterAge).toEqual(2.95)
   });
 
 });

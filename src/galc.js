@@ -24,28 +24,28 @@ export class Galc
   getMercuryYears()
   {
     let years = this.getYears();
-    let mercYears = (years / .24).toFixed(1);
+    let mercYears = parseFloat((years / .24).toFixed(1));
     return mercYears;
   }
 
   getVenusYears()
   {
     let years = this.getYears();
-    let venusYears = (years / .62).toFixed(1);
+    let venusYears = parseFloat((years / .62).toFixed(1));
     return venusYears;
   }
 
   getMarsYears()
   {
     let years = this.getYears();
-    let marsYears = (years / 1.88).toFixed(1);
+    let marsYears = parseFloat((years / 1.88).toFixed(1));
     return marsYears;
   }
 
   getJupiterYears()
   {
     let years = this.getYears();
-    let jupiterYears = (years / 11.86).toFixed(2);
+    let jupiterYears = parseFloat((years / 11.86).toFixed(2));
     return jupiterYears;
   }
 }
