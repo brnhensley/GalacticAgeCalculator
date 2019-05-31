@@ -56,6 +56,13 @@ export class Galc
     return marsYears;
   }
 
+  getMarsYearsLeft()
+  {
+    let yearsLeft = this.lifeLeft();
+    let marsYearsLeft = parseFloat((yearsLeft / 1.88).toFixed(1));
+    return marsYearsLeft;
+  }
+
   getJupiterYears()
   {
     let years = this.getYears();

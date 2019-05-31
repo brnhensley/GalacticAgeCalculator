@@ -63,4 +63,11 @@ describe('Galc', function() {
     expect(venusYearsLeft).toEqual(58.9)
   });
 
+  it('should convert earth years left to Mars years left', function ()
+  {
+    let dob = new Galc(new Date(1984, 3, 13));
+    let marsYearsLeft = dob.getMarsYearsLeft();
+    expect(marsYearsLeft).toEqual(19.4)
+  });
+
 });
