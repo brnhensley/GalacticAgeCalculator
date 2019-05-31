@@ -49,4 +49,11 @@ describe('Galc', function() {
     expect(jupiterAge).toEqual(2.95)
   });
 
+  it('should convert earth years left to Mercury years left', function ()
+  {
+    let dob = new Galc(new Date(1984, 3, 13));
+    let mercYearsLeft = dob.getMercuryYearsLeft();
+    expect(mercYearsLeft).toEqual(152.1)
+  });
+
 });

@@ -28,6 +28,13 @@ export class Galc
     return mercYears;
   }
 
+  getMercuryYearsLeft()
+  {
+    let yearsLeft = this.lifeLeft();
+    let mercYearsLeft = parseFloat((yearsLeft / .24).toFixed(1));
+    return mercYearsLeft;
+  }
+
   getVenusYears()
   {
     let years = this.getYears();
