@@ -7,9 +7,7 @@ describe('Galc', function() {
     let dob = new Galc(new Date(1984, 3, 13));
     expect(typeof dob).toEqual(typeof new Galc);
   });
-// });
-//
-// describe('Galc', function() {
+
   it('should calculate age in years from a date', function ()
   {
     // TEST
@@ -18,13 +16,13 @@ describe('Galc', function() {
     expect(age).toEqual(35);
   });
 
-  // it('should convert earth years to Mercury years', function ()
-  // {
-  //   // TEST
-  //   let age = new Galc(new Date(1970, 1, 1));
-  //
-  //
-  // });
+  it('should convert earth years to Mercury years', function ()
+  {
+    // TEST
+    let dob = new Galc(new Date(1984, 3, 13));
+    let mercAge = dob.getMercuryYears();
+    expect(mercAge).toEqual('145.8')
+  });
 
 
 });
