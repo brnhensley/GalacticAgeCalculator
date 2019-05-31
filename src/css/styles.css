@@ -1,8 +1,10 @@
+/* once I track down why these aren't working I will remove the !important */
+
 body {
   /* background-color: #004883; */
   background-color: skyblue !important;
 }
 
-.result {
+#result {
   display: none;
 }
