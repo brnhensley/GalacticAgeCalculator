@@ -45,7 +45,7 @@ describe('Galc', function() {
   {
     const dob = new Galc(new Date(1984, 3, 13));
     const mercYearsLeft = dob.getMercuryYearsLeft();
-    expect(mercYearsLeft).toEqual(152.1)
+    expect(mercYearsLeft).toEqual('Your remaining life expectancy in Mercurial years is 152.1!')
   });
 
   it('should convert the number of earth years over life expectancy to Mercury years', function ()
@@ -68,7 +68,7 @@ describe('Galc', function() {
   {
     const dob = new Galc(new Date(1984, 3, 13));
     const venusYearsLeft = dob.getVenusYearsLeft();
-    expect(venusYearsLeft).toEqual(58.9)
+    expect(venusYearsLeft).toEqual('Your remaining life expectancy in Venusian years is 58.9!')
   });
 
   it('should convert the number of earth years over life expectancy to Venus years', function ()
@@ -91,7 +91,7 @@ describe('Galc', function() {
   {
     const dob = new Galc(new Date(1984, 3, 13));
     const marsYearsLeft = dob.getMarsYearsLeft();
-    expect(marsYearsLeft).toEqual(19.4)
+    expect(marsYearsLeft).toEqual('Your remaining life expectancy in Martian years is 19.4!')
   });
 
   it('should convert the number of earth years over life expectancy to Mars years', function ()
@@ -114,7 +114,7 @@ describe('Galc', function() {
   {
     const dob = new Galc(new Date(1984, 3, 13));
     const jupYearsLeft = dob.getJupiterYearsLeft();
-    expect(jupYearsLeft).toEqual(3.08)
+    expect(jupYearsLeft).toEqual('Your remaining life expectancy in Jovian years is 3.08!')
   });
 
   it('should convert the number of earth years over life expectancy to Jupiter years', function ()
