@@ -14,6 +14,9 @@ The Galc (Galactic Age caLCulator) is a web app that will calculate a persons ag
 * _run [$ npm init -y] from the apps root folder_
 * _run [$ npm install] from the apps root folder_
 * _run [$ npm test] from the apps root folder_
+* _run [$ npm run build] from the apps root folder_
+* _open dist/index.html to use app_
+
 
 ## _Specs_
 
