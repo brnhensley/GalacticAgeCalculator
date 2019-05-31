@@ -14,6 +14,13 @@ export class Galc
     return Math.abs(ageFromStart.getUTCFullYear() - 1970);
   }
 
+  lifeLeft()
+  {
+    let years = this.getYears();
+    let lifeLeft = 71.5 - years;
+    return lifeLeft;
+  }
+
   getMercuryYears()
   {
     let years = this.getYears();
@@ -39,7 +46,6 @@ export class Galc
   {
     let years = this.getYears();
     let jupiterYears = (years / 11.86).toFixed(2);
-    console.log(jupiterYears);
     return jupiterYears;
   }
 }
