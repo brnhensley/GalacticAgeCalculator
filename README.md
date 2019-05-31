@@ -11,7 +11,9 @@ This is a web app that will calculate a persons age on different planets with di
 ## _Setup/Installation Requirements_
 
 * _Clone this repo to your home machine_
-* _Open index.html in the browser_
+* _run [$ npm init -y] from the apps root folder_
+* _run [$ npm install] from the apps root folder_
+* _run [$ npm test] from the apps root folder_
 
 ## _Specs_
 
