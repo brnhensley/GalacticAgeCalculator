@@ -101,7 +101,6 @@ describe('Galc', function() {
     expect(marsYearsLeft).toEqual("You are 5.6 Martian years over expected!")
   });
 
-
   // Jupiter Tests
 
   it('should convert earth years to Jupiter years', function ()
@@ -116,6 +115,13 @@ describe('Galc', function() {
     let dob = new Galc(new Date(1984, 3, 13));
     let jupYearsLeft = dob.getJupiterYearsLeft();
     expect(jupYearsLeft).toEqual(3.08)
+  });
+
+  it('should convert the number of earth years over life expectancy to Jupiter years', function ()
+  {
+    let dob = new Galc(new Date(1900, 1, 1));
+    let jupYearsLeft = dob.getJupiterYearsLeft();
+    expect(jupYearsLeft).toEqual("You are 4.01 Jovian years over expected!")
   });
 
 });
