@@ -70,4 +70,11 @@ describe('Galc', function() {
     expect(marsYearsLeft).toEqual(19.4)
   });
 
+  it('should convert earth years left to Jupiter years left', function ()
+  {
+    let dob = new Galc(new Date(1984, 3, 13));
+    let jupYearsLeft = dob.getJupiterYearsLeft();
+    expect(jupYearsLeft).toEqual(3.08)
+  });
+
 });

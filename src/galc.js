@@ -69,4 +69,11 @@ export class Galc
     let jupiterYears = parseFloat((years / 11.86).toFixed(2));
     return jupiterYears;
   }
+
+  getJupiterYearsLeft()
+  {
+    let yearsLeft = this.lifeLeft();
+    let jupYearsLeft = parseFloat((yearsLeft / 11.86).toFixed(2));
+    return jupYearsLeft;
+  }
 }
