@@ -21,6 +21,15 @@ describe('Galc', function() {
     expect(lifeLeft).toEqual(36.5)
   });
 
+  it('should turn a negative into a positive', function ()
+  {
+    let dob = new Galc(new Date(1900, 3, 13));
+    let lifeLeft = dob.lifeLeft();
+    let overTime = dob.overTime(lifeLeft)
+    expect(lifeLeft).toEqual(-47.5)
+    expect(overTime).toEqual(47.5)
+  });
+
   it('should convert earth years to Mercury years', function ()
   {
     let dob = new Galc(new Date(1984, 3, 13));
@@ -82,6 +91,13 @@ describe('Galc', function() {
     let dob = new Galc(new Date(1947, 1, 1));
     let mercYearsLeft = dob.getMercuryYearsLeft();
     expect(mercYearsLeft).toEqual("You are 2.1 Mercurial years over expected!")
+  });
+
+  it('should convert the number of earth years over life expectancy to Venus years', function ()
+  {
+    let dob = new Galc(new Date(1947, 1, 1));
+    let venYearsLeft = dob.getVenusYearsLeft();
+    expect(venYearsLeft).toEqual("You are 0.8 Venusian years over expected!")
   });
 
 });

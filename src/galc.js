@@ -40,13 +40,10 @@ export class Galc
   getMercuryYearsLeft()
   {
     let yearsLeft = this.lifeLeft();
-    console.log("yearsLeft" + yearsLeft);
     let mercYearsLeft = parseFloat((yearsLeft / .24).toFixed(1));
-    console.log("mercYearsLeft" + mercYearsLeft);
     if (mercYearsLeft < 0)
     {
       let overTime = "You are " + this.overTime(mercYearsLeft) + " Mercurial years over expected!";
-      console.log("final" + overTime);
       return overTime;
     }
     return mercYearsLeft;
@@ -65,6 +62,12 @@ export class Galc
   {
     let yearsLeft = this.lifeLeft();
     let venYearsLeft = parseFloat((yearsLeft / .62).toFixed(1));
+    if (venYearsLeft < 0)
+    {
+      let overTime = "You are " + this.overTime(venYearsLeft) + " Venusian years over expected!";
+      console.log("final" + overTime);
+      return overTime;
+    }
     return venYearsLeft;
   }
 
