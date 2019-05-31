@@ -7,9 +7,9 @@ describe('Galc', function() {
     let dob = new Galc(new Date(1984, 3, 13));
     expect(typeof dob).toEqual(typeof new Galc);
   });
-});
-
-describe('Galc', function() {
+// });
+//
+// describe('Galc', function() {
   it('should calculate age in years from a date', function ()
   {
     // TEST
