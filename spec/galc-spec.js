@@ -24,5 +24,12 @@ describe('Galc', function() {
     expect(mercAge).toEqual('145.8')
   });
 
+  it('should convert earth years to Venus years', function ()
+  {
+    // TEST
+    let dob = new Galc(new Date(1984, 3, 13));
+    let venusAge = dob.getVenusYears();
+    expect(venusAge).toEqual('56.5')
+  });
 
 });
