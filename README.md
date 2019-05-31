@@ -6,7 +6,7 @@
 
 ## _Description_
 
-This is a web app that will calculate a persons age on different planets with different year lengths.
+The Galc (Galactic Age caLCulator) is a web app that will calculate a persons age on different planets with different year lengths.
 
 ## _Setup/Installation Requirements_
 
