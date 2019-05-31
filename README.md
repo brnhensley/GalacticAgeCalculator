@@ -19,6 +19,7 @@ This is a web app that will calculate a persons age on different planets with di
 
 |Objectives|example input|example output|
 |-|-|-|
+|It will convert a date to the number of years from present|1984, 3, 13|35|
 |It will convert earth years to Mercury years|1|4.16|
 |It will convert earth years to Venus years|10|16.13|
 |It will convert earth years to Mars years|10|5.32|
