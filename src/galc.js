@@ -65,7 +65,6 @@ export class Galc
     if (venYearsLeft < 0)
     {
       let overTime = "You are " + this.overTime(venYearsLeft) + " Venusian years over expected!";
-      console.log("final" + overTime);
       return overTime;
     }
     return venYearsLeft;
@@ -84,6 +83,12 @@ export class Galc
   {
     let yearsLeft = this.lifeLeft();
     let marsYearsLeft = parseFloat((yearsLeft / 1.88).toFixed(1));
+    if (marsYearsLeft < 0)
+    {
+      let overTime = "You are " + this.overTime(marsYearsLeft) + " Martian years over expected!";
+      console.log("final" + overTime);
+      return overTime;
+    }
     return marsYearsLeft;
   }
 

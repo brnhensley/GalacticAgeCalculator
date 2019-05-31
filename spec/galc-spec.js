@@ -94,6 +94,14 @@ describe('Galc', function() {
     expect(marsYearsLeft).toEqual(19.4)
   });
 
+  it('should convert the number of earth years over life expectancy to Mars years', function ()
+  {
+    let dob = new Galc(new Date(1937, 1, 1));
+    let marsYearsLeft = dob.getMarsYearsLeft();
+    expect(marsYearsLeft).toEqual("You are 5.6 Martian years over expected!")
+  });
+
+
   // Jupiter Tests
 
   it('should convert earth years to Jupiter years', function ()
