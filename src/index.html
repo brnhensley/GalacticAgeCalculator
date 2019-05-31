@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    I am a useless HTML file.
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Galactic Age Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>GALACTIC AGE CALCULATOR</h1>
+
+    <form id="age">
+      <div class="form-group">
+        <label for="date">Enter your birthday to find out your age on Mercury, Venus, Mars, and Jupiter:</label>
+        <input type="date" id="dob">
+      </div>
+
+      <button type="submit" class="btn btn-info">Find out!</button>
+    </form>
+
+    <div id="result">
+      <p>Your age on Mercury is: <span class="merc"></span>!</p>
+      <p>Your age on Venus is: <span class="venus"></span>!</p>
+      <p>Your age on Mars is: <span class="mars"></span>!</p>
+      <p>Your age on Jupirer is: <span class="jupiter"></span>!</p>
+    </div>
+
+  </div>
+
+</body>
 </html>
