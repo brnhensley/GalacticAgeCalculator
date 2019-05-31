@@ -42,6 +42,13 @@ export class Galc
     return venusYears;
   }
 
+  getVenusYearsLeft()
+  {
+    let yearsLeft = this.lifeLeft();
+    let venYearsLeft = parseFloat((yearsLeft / .62).toFixed(1));
+    return venYearsLeft;
+  }
+
   getMarsYears()
   {
     let years = this.getYears();
